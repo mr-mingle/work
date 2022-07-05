@@ -1,0 +1,157 @@
+
+body{
+    font: normal 16px Arial, Helvetica, sans-serif;
+    margin:0em 10em;
+
+}
+.box1{
+    background-color: black;
+    color: cornsilk;
+    width: 80%;
+    padding: 5px;
+    border: 5px rgb(255, 0, 0) solid;
+
+}
+/* or we can use .box1 p{}  -->  p tags inside class box1*/
+.box1 > p{
+    color: aqua;
+}
+.box1 h1{
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bolder;
+}
+.box2 {background-color:goldenrod;
+    margin : 2em 0em;
+    border: 5px green dotted;
+    border-radius: 50px;
+}
+.cat{
+    border: 5px blueviolet solid;
+}
+.cat h3{
+    text-align: center;
+    color: rgb(57, 90, 7);
+}
+/*ul tag inside cat*/
+.cat ul{
+    padding :200px;
+}
+/*removes underline of all anchor tags*/
+a{
+    text-decoration: none;
+}
+/*a also have states like active or visited*/
+a:hover{
+    color:crimson
+}
+.cat li{
+    padding: 5px;
+    border-bottom:5px darkblue dotted;
+    list-style-image: url("C:\\Users\\rohan\\Downloads\\IMG_6505-50px.jpg") ;
+
+}
+#form1{
+    padding: 30px;
+}
+#form1 div{
+    padding:5px
+}
+#form1 label{
+    display: block;
+}
+#form1 input[type="text"], #form1 input[type="email"], #form1 textarea,#form1 input[type="number"], #form1 input[type="date"], #form1 select{/*without type all input(even button's) width will increase to 100%*/
+    width: 100%;
+}
+.button{
+    background-color: black;
+    color: aliceblue;
+    border: 0ch;
+    padding: 5px 15px;
+
+}
+.button:hover{
+    background-color: red;
+    color: aliceblue;
+}
+.block{
+    float: left ;
+    width: 30%;
+    border: 5px solid grey;
+    /*margin: 5px;*/
+    padding: 5px;
+    /*OR WE CAN DO*/
+    width: 33.3%;
+    border: 1px solid grey;
+    /*margin: 5px;*/
+    padding: 15px;
+    box-sizing: border-box ;/*makes width include border, does'n't work with margins"*/
+    
+}
+#mainblock{
+    float: left;
+    width: 80%;
+    box-sizing: border-box;
+    height: 500px;
+}
+#sideblock{
+    float: right;
+    width: 20%;
+    background-color: #333;
+    color: #fff;
+    box-sizing: border-box;
+    padding :10px;
+}
+.clr{
+    clear: both;
+}
+#position{
+    width: 800px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 15px;
+    position: relative;
+    top: 0px;
+    /* z-index: 200; */
+    background-image: url("C:\\Users\\rohan\\Downloads\\IMG_6505.HEIC");
+    background-position: 2000px 3500px;
+    /*background-repeat: no-repeat ;
+      */                  /*push right+ down*/
+      background-position: center top;
+}
+#position h1{
+    top: 150px;
+    position: absolute;/*--> now Hello is wrtten 40 px from top of the page*/
+}
+#position h3{
+    bottom: 150px;
+    right: 50px;
+    position: absolute;/*--> now Hello is wrtten 40 px from top of the page*/
+}
+.pseudo li:first-child{
+    background: red;
+}
+.pseudo li:last-child{
+    background: blue;
+}
+.pseudo li:nth-child(5){
+    background: green;
+}
+.pseudo li:nth-child(even){
+    background: grey;
+}
+.fixed{
+    position: fixed;
+    top: 50px;
+    margin-left: 4em;
+}
+#lf{
+    float: left;
+}/*
+#rfh{
+    clear: both;
+}*/
+#rf{
+    float: right;
+}

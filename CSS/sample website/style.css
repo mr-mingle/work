@@ -1,0 +1,85 @@
+body{
+    background: rgba(141, 154, 146, 0.433);
+    color: aliceblue;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+#mainheader{
+    background: coral;
+    color: aliceblue;
+
+}
+#navbar{
+    background: #333;
+    color: #fff;
+
+}
+#navbar ul{
+    padding: 0%;
+    list-style: none; 
+}
+#navbar li{
+    display: inline;
+}
+#navbar a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 20px;
+}
+#Showcase{
+    background-image: url("E:\\work\\CSS\\sample website\\download.jpg");
+    background-position: center;
+    background-position: 0px -400px;
+    text-align: center;
+    min-height: 300px;
+    /*with only "height" text overflows on small scr, to avoid that use "min-hight"*/
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+}
+#Showcase h1{
+    color: #fff;
+    font-size:50px;
+    line-height: 1.6em;
+    padding-top: 30px;
+}
+#Main{
+    color: #333;
+    width: 70%;
+    float:left;
+    padding: 0px 30px;
+    box-sizing: border-box;
+
+}
+#sidebar{
+    width: 30%;
+    float: right;
+    padding: 30px;
+    box-sizing: border-box;
+    background: #333;
+    color: #fff;
+}
+#footer{
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+@media(max-width:600px){
+    #Main{
+        width: 100%;
+        float: none;
+    }
+    #sidebar{
+        float: none;
+        width: 100%;
+    }
+}
